@@ -1,28 +1,6 @@
 // FIRST SLIDER //
 const slideImgs = document.querySelectorAll('.header-slider-img')
 let index2 = 0;
-// setInterval(() => {
-//     nextSlide();
-//     rendering();
-//   }, 5000);
-  
-//   function rendering() {
-//     slideimgs.forEach((slide, i) => {
-//       if (index2 === i) {
-//         slide.classList.add("active");
-//       } else {
-//         slide.classList.remove("active");
-//       }
-//     });
-//   }
-//   function nextSlide() {
-//     if (slideimgs === slideimgs.length - 1) {
-//         index2 = 0;
-//     } else {
-//         index2++;
-//     }
-//     rendering();
-//   }
 const activeImgSlide = n =>{
     for(slideImg of slideImgs){
         slideImg.classList.remove('active');
@@ -39,15 +17,6 @@ const nextImgSlide = () =>{
     }
 }
 setInterval(nextImgSlide, 5000);
-
-
-
-
-
-
-
-
-
 
 // --- PROJECTS FILTER---- //
 let indicator = document.querySelector('.categories-ul').children;
@@ -165,5 +134,20 @@ function createUser(userData){
     }).catch(error =>{
         console.log(error);
     });
-
 }
+
+// modal
+const btn = document.getElementById('footer-btn');
+const pop = document.querySelector('.modal');
+const closes = document.querySelector('.material-icons');
+const closes2 = document.querySelector('.modal-button');
+
+btn.addEventListener('click', e =>{
+    pop.style.display = 'block';
+});
+closes.addEventListener('click', e=>{
+    pop.style.display = "none";
+});
+closes2.addEventListener('click', e=>{
+    pop.style.display = "none";
+});
