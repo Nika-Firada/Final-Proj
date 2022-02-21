@@ -239,19 +239,26 @@
 }
 
 /* articles */
-@media (max-width: 1384px){
-    .article-main-img{
-        max-width: 700px;
+@media (max-width: 1055px){
+    .latest-article-body-items{
+        flex-direction: column;
+    }
+    .text-area-lorem-text{
+        max-width: 800px;
+    }
+    .read-more-text{
+        margin-bottom: 10px;
+    }
+    .reversed :nth-child(2){
+        order: 2; 
+    } 
+    .margin-reverse{
+        margin-left: 0;
     }
 }
-@media (max-width: 1095px){
-    .first-article{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-    } 
-    .reverse:first-child{
-        order: 1;
+@media (max-width: 400px){
+    .rosa-team-section{
+        margin-top: 150px;
+        margin-bottom: 150px;
     }
-
 }
