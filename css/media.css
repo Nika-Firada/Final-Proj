@@ -238,24 +238,31 @@
     }
 }
 
-/* articles */
-@media (max-width: 1055px){
-    .latest-article-body-items{
-        flex-direction: column;
+/* articles media*/
+@media (min-width: 1024px){
+    .latest-articles-body-wrapper {
+        grid-template-columns: 1fr 1fr;
     }
-    .text-area-lorem-text{
-        max-width: 800px;
+    .latest-articles-body-item-wrapp {
+        align-items: flex-start;
+        gap: 1em;
     }
-    .read-more-text{
-        margin-bottom: 10px;
+    .latest-articles-body-item-wrapp h3 {
+        font-size: 2.5em;
     }
-    .reversed :nth-child(2){
-        order: 2; 
-    } 
-    .margin-reverse{
-        margin-left: 0;
+    .latest-articles-head h2, .section-5 h2 {
+        font-size: 4.3em;
+    }
+    .blue-descr-text p {
+        font-size: 2.3em;
+    }
+    .order-01, .order-02, .order-03, .order-04, .order-05, .order-06 {
+        order: 1;
     }
 }
+/* articles media*/
+
+/* rosa team */
 @media (max-width: 400px){
     .rosa-team-section{
         margin-top: 150px;

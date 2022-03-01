@@ -567,70 +567,89 @@ body {
     justify-content: center;
 }
 /* latest-articles */
-.latest-articles{
+.latest-articles-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Glacial Indifference"; 
     margin-top: 170px;
 }
-.latest-articles-head{
+.latest-articles-head h2 {
+    font-size: 70px;
+}
+.latest-articles-head h6 {
+    color: #2ED279;
+}
+.latest-articles-body-wrapper {
+    display: grid;
+    margin-top: 79px;
+    grid-template-columns: 1fr;
+}
+.latest-articles-body-wrapper div {
+    width: 100%;
+}
+.blue-decoration {
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+.blue-decoration-plus {
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+.blue-descr-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.latest-articles-body-item-wrapp {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 80px;
+    gap: .5em;
+    padding: 5em;
+    font-family: "Muli";
 }
-.latest-articles-head p{
-    color: #2ED279;
-    font-size: 13px;
-    font-family: "Glacial Indifference";
-}
-.latest-articles-head h2{
-    font-size: 70px;
-    color: #2E2E2E;
-    font-family: "Glacial Indifference";
-}
-.freelancer{
+.latest-articles-body-item-wrapp h6 {
     color: #888888;
-    font-size: 14px;
-    font-family: "Muli";
 }
-.text-area-heading{
-    font-size: 40px;
-    font-weight: bold;
-    color: #161616;
-    font-family: "Glacial Indifference";
-    margin-bottom: 25px;
-}
-.text-area-lorem-text{
-    color: #494949;
-    font-size: 16px;
-    font-family: "Muli";
-    margin-bottom: 10px;
-    padding: 5px;
-    max-width: 560px;
-}
-.read-more-text{
+.read-mr{
     cursor: pointer;
-    color: #444444;
-    font-size: 13px;
 }
-.body-items-img-area{
-    max-width: 1050px;
-}
-.body-items-img-area img{
-    width: 100%;
-}
-.latest-article-body-items{
+.blue-descr-text {
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 10px;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: #15263E;
 }
-.reversed :nth-child(1){
-    order: 2; 
-} 
-.margin-reverse{
-    margin-left: 20px;
+.blue-descr-text p {
+    white-space: nowrap;
+    font-size: 1.3em;
+    color: #E93656;
+    transform: rotate(-90deg);
 }
-/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.order-01 {
+    order: 1;
+}
+.order-02 {
+    order: 2;
+}
+.order-03 {
+    order: 4;
+}
+.order-04 {
+    order: 3;
+}
+.order-05 {
+    order: 5;
+}
+.order-06 {
+    order: 6;
+}
+
 /* contact */
 .contact-bg{
     background-image: url(../images/map.png);
